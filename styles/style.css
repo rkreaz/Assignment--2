@@ -2,12 +2,11 @@
 
 .header_area {
     width: 100%;
+    height: auto;
     background: rgba(255, 144, 14, 0.1);
 }
 .nav_area{
   display: flex;
-  width: 1120px;
-  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
@@ -363,5 +362,33 @@
 }
 /* Responsive styles  */
 @media screen and (max-width:470px) {
+    .nav_area {
+        flex-direction: column;
+      
+    }
+    .nav_title {
+        text-align: center;
+    }
+    .quicks_area {
+        flex-direction: column;
+        
     
+    }
+    .quick_area {
+     display: block;
+     grid-template-columns: repeat(1fr, 1fr);
+     width: 100%;
+    }
+    .loves_section {
+        flex-direction: column;
+    }
+    .loves_section {
+        flex-direction: column;
+    }
+    .Fact_section {
+        flex-direction: column;
+    }
+    .Collection_container {
+         flex-direction: column;
+    }
 }
